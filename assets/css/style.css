@@ -501,6 +501,23 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 
+.download-cv .title {
+  color: var(--vegas-gold);
+  background: var(--onyx);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  width: max-content;
+  padding: 3px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.download-cv .icon {
+  display:inline;
+}
+
 
 
 
@@ -1176,6 +1193,124 @@ main {
   #CONTACT
 \*-----------------------------------*/
 
+
+/**
+ * #contactsection 
+ */
+
+ .contactsection { margin-top: 35px;  margin-bottom: 35px; }
+
+ .contactsection-title { margin-bottom: 30px; }
+ 
+ .contactsection-list {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 20px;
+ }
+ 
+ .contactsection-item {
+   position: relative;
+   background: var(--border-gradient-onyx);
+   padding: 20px;
+   border-radius: 14px;
+   box-shadow: var(--shadow-2);
+   margin-bottom: 18px;
+   margin-top: 18px;
+   z-index: 1;
+ }
+ 
+ .contactsection-item::before {
+   content: "";
+   position: absolute;
+   inset: 1px;
+   background: var(--bg-gradient-jet);
+   border-radius: inherit;
+   z-index: -1;
+ }
+ 
+ .contactsection-icon-box { margin-bottom: 10px; }
+ 
+ .contactsection-icon-box img { margin: auto; }
+ 
+ .contactsection-content-box { text-align: center; }
+ 
+ .contactsection-item-title { margin-bottom: 25px; }
+ 
+ .contactsection-item-text {
+   color: var(--light-gray);
+   font-size: var(--fs-6);
+   font-weight: var(--fw-3);
+   line-height: 1.6;
+ }
+
+ .contactsectioncontent-listemail {
+  display: grid;
+  grid-template-columns: 1fr;
+   gap: 3px;
+}
+
+.contactsectioncontent-listsocialmedia {
+  display: grid;
+  grid-template-columns: 1fr;
+   gap: 3px;
+}
+
+.contactsectioncontent-listresearch {
+  display: grid;
+  grid-template-columns: 1fr;
+   gap: 3px;
+}
+
+.resume-compliteracy-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   gap: 3px;
+}
+
+.resume-proglang-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   gap: 3px;
+}
+
+.resume-languages-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   gap: 3px;
+}
+
+.contactsectioncontent-item {
+  min-width: 100%;
+  display: flex;
+  align-items: left;
+  gap: 10px;
+}
+
+.contactsectioncontent-info {
+  max-width: 100%;
+  width: 100%;
+}
+
+.contactsectioncontent-title {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  margin-bottom: 2px;
+  margin-left: 0px;
+  text-align: left;
+}
+
+.contactsectioncontent-info :is(.contactsectioncontent-link, time, address) {
+  color: var(--white-2);
+  font-size: var(--fs-8);
+  margin-bottom: 20px;
+  margin-left: 0px;
+  text-align: left;
+}
+
+.contactsectioncontent-info address { font-style: normal; }
+
+
+
 .mapbox {
   position: relative;
   height: 250px;
@@ -1420,6 +1555,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     max-width: calc(100% - 64px);
     width: calc(100% - 64px);
   }
+
+  .download-cv .title { padding: 8px 12px; text-align: center;}
+
 
 
 
@@ -1793,6 +1931,45 @@ textarea.form-input::-webkit-resizer { display: none; }
   .clients-item { min-width: calc(25% - 38px); }
 
 
+  /* Contact content */
+
+  .contactsectioncontent-listemail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     gap: 3px;
+  }
+  
+  .contactsectioncontent-listsocialmedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 3px;
+  }
+  
+  .contactsectioncontent-listresearch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+     gap: 3px;
+  }
+  
+  .resume-compliteracy-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+     gap: 3px;
+  }
+  
+  .resume-languages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 3px;
+  }
+  
+  .resume-proglang-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     gap: 3px;
+  }
+  
+
 
   /**
    * PORTFOLIO
@@ -1925,6 +2102,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
+  .download-cv .title { margin: auto; text-align: center;} 
 
 
   /**
