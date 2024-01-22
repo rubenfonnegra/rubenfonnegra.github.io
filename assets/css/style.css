@@ -927,7 +927,7 @@ main {
 
 .skill-progress-bg {
   background: var(--jet);
-  width: 100%;
+  width: 90%;
   height: 8px;
   border-radius: 10px;
 }
@@ -1981,6 +1981,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
      gap: 3px;
   }
+
+  .skills-bar-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     gap: 3px;
+  }
+  
   
 
 
